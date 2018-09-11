@@ -6,6 +6,11 @@
   "repository": "git@github.com:costaleonardo/html-css-natours-template.git",
   "author": "Leonardo Da Costa",
   "license": "MIT",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev:start": "live-server",
+    "start": "npm-run-all --parallel dev:start watch:sass"
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
